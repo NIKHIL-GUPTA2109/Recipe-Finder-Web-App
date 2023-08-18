@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+    <h1><span>R</span>eciepedia</h1>
+    <div>
+      <a href="index.html">Register</a>
+    </div>
+  </header> 
+
+  <section id="home">
+    <div class="container">
+      <form id="searchForm">
+        <label for="ingredientsInput">Enter ingredients:</label>
+        <input type="text" id="ingredientsInput" placeholder="e.g., chicken, onions, tomatoes">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <div id="recipeResults"></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Our Recipe Finder</h2>
+      <p>Welcome to Reciepedia, your go-to recipe finder web app! We are passionate about cooking and making the process of finding delicious recipes easier for everyone. Our mission is to provide you with a wide range of mouth-watering recipes that cater to all tastes and dietary preferences.</p>
+      <p>At Reciepedia, we understand that cooking is not just about preparing meals; it's a way to express creativity and share joy with loved ones. Whether you are a seasoned chef or a cooking enthusiast, our recipe finder is designed to inspire you and make your cooking experience enjoyable.</p>
+      <p>Join our community of food lovers and embark on a flavorful journey with Reciepedia. Whether you're looking for a classic comfort dish or a trendy new recipe, we've got you covered. Happy cooking!</p>
+    </div>
+  </section> 
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>We value your feedback and suggestions.Whether you want to report a technical issue, request a new feature, or simply want to say hello, feel free to reach out to us using the contact details below. We'll get back to you as soon as possible.</p>
+      <div class="contact-info">
+        <p><i class="fa fa-envelope"></i> Email: contact@reciepedia.com</p>
+        <p><i class="fa fa-phone"></i> Phone: +1 (123) 456-7890</p>
+        <p><i class="fa fa-map-marker"></i> Address: 123 Recipe Street, Foodville, USA</p>
+      </div>
+      <p>You can also follow us on social media to stay updated with the latest recipes, cooking tips, and more!</p>
+      <div class="social-media">
+        <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-pinterest"></i></a>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section>
+    <div id="modalOverlay" class="modal-overlay">
+      <div id="modalContent" class="modal-content">
+        <h3 id="modalTitle">Warm Welcome to Excited Customer</h3>
+        <div id="modalBody"></div>
+        <button id="closeButton">Close</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="scroll-buttons">
+    <button id="scrollUpBtn"><i class="fa fa-arrow-up"></i></button>
+    <button id="scrollDownBtn"><i class="fa fa-arrow-down"></i></button>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

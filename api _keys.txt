@@ -1,0 +1,8 @@
+Application ID
+d52574e1
+
+Application Keys
+8445fbfcc77fe7607c56708975ae7b7d	
+f11bd3d10698ba168fc75bd85ea26caf	
+
+deployed site link - https://recipe-finder-web-04.netlify.app/
